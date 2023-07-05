@@ -21,6 +21,9 @@ public class GerenciaVendas {
     }
 
     public void cadastrarCliente(String nome, String cpf, String email){
+        if (nome.length() == 0){
+            throw new UnsupportedOperationException("Nome inválido");
+        }
         if (!validacoes.validaCpf(cpf)){
             throw new IllegalArgumentException("Cpf inválido");
         }
@@ -38,6 +41,9 @@ public class GerenciaVendas {
     }
 
     public void cadastrarVendedor(String nome, String cpf, String email){
+        if (nome.length() == 0){
+            throw new UnsupportedOperationException("Nome inválido");
+        }
         if (!validacoes.validaCpf(cpf)){
             throw new IllegalArgumentException("Cpf inválido");
         }
