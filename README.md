@@ -18,7 +18,7 @@ Exibe uma lista de todos os vendedores cadastrados, com seu nome, e-mail e CPF
 #### > > > Listar todos os clientes
 Exibe uma lista de todos os clientes cadastrados, com seu nome, e-mail e CPF
 #### > > > Listar todas as vendas
-Exibe uma lista de todas as vendas cadastradas, com nome do vendedor responsável, cliente, valor da venda e data de registro
+Exibe uma lista de todas as vendas cadastradas, com nome do vendedor responsável, nome do cliente, valor da venda e data de registro
 #### > > > Histórico de vendas de um vendedor
 Solicita que o usuário digite o e-mail do vendedor para exibir todas as suas vendas
   - Verifica se o texto digitado é um formato de e-mail válido, se não for, exibe mensagem de "E-mail inválido"
@@ -60,7 +60,7 @@ Exibe menu inicial
 Finaliza o programa
 
 ### * Opções inválidas
-Caso o usuário digite uma opção inválida em qualquer um dos menus, exibe a mensagem "Opção inválida" e retorna ao menu inicial
+Caso o usuário digite uma opção inválida em qualquer um dos menus, inclusive caso não digite nada (String vazia), exibe a mensagem "Opção inválida" e retorna ao menu inicial
 
 # Possíveis melhorias
 - Formatar o CPF no momento de exibir lista de vendedores e clientes cadastrados para o formato 000.000.000-00. Atualmente exibe apenas números
